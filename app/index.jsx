@@ -15,6 +15,8 @@ export default function HomeScreen() {
       <Link href="/login">Login Page</Link>
       <Spacer/>
       <Link href="/register">Register Page</Link>
+      <Spacer/>
+      <Link href="/profile">Profile Page</Link>
     </ThemedView>
   );
 }
