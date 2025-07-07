@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router"
-import { useColorScheme } from "react-native"
+import { Image, useColorScheme } from "react-native"
 import { Colors } from "../../constants/Colors"
 
 
@@ -20,9 +20,27 @@ const DashboardLayout = () => {
         tabBarInactiveTintColor: theme.iconColor,
       }}
       > 
-        <Tabs.Screen name="profile" options={{ title: 'Profile' }} />
-        <Tabs.Screen name="create" options={{ title: 'Create' }} />
-        <Tabs.Screen name="books" options={{ title: 'Books' }} />
+        <Tabs.Screen name="profile" options={{ title: 'Profile', tabBarIcon: () => (
+          <Image
+            source={require('../../assets/favicon.png')}
+            style={{ width: 24, height: 24 }}
+            resizeMode="contain"
+          />
+        ) }} />
+        <Tabs.Screen name="create" options={{ title: 'Create', tabBarIcon: () => (
+          <Image
+            source={require('../../assets/favicon.png')}
+            style={{ width: 24, height: 24 }}
+            resizeMode="contain"
+          />
+        ) }} />
+        <Tabs.Screen name="books" options={{ title: 'Books', tabBarIcon: () => (
+          <Image
+            source={require('../../assets/favicon.png')}
+            style={{ width: 24, height: 24 }}
+            resizeMode="contain"
+          />
+        ) }} />
       </Tabs>
 
   )
