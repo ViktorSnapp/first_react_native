@@ -2,19 +2,19 @@ import { Text, StyleSheet, } from 'react-native';
 import { Link } from 'expo-router';
 import ThemedView from '../components/ThemedView';
 import ThemedLogo from '../components/ThemedLogo';
+import ThemedText from '../components/ThemedText';
+import Spacer from '../components/Spacer';
 
 export default function HomeScreen() {
  
   return (
     <ThemedView style={styles.container}>
       <ThemedLogo style={styles.img}/>
-      <Text style={styles.title}>Hello, Viktor 1 times</Text>
-      <Text style={{marginTop: 18, marginBottom: 20}}>
-        Reading List one
-      </Text>
-
-      <Link style={styles.marginVertical12} href="/about">To About</Link>
-      <Link href="/more">To More</Link>
+      <ThemedText style={styles.title} title="true">Hello, Viktor 1 times</ThemedText>
+      <Spacer/>
+      <Link href="/login">Login Page</Link>
+      <Spacer/>
+      <Link href="/register">Register Page</Link>
     </ThemedView>
   );
 }

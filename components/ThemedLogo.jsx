@@ -1,5 +1,4 @@
 import { View, Image, useColorScheme } from 'react-native'
-import React from 'react'
 import DarkModeLogo from '../assets/img/full-logo.png'
 import LightModeLogo from '../assets/img/full-logo-light.png'
 
